@@ -1,0 +1,6 @@
+vsphere_vcenter = "10.166.160.204"
+vsphere_user = "administrator@vsphere.local"
+vsphere_password = "T3l1ndus!"
+vsphere_datacenter = "PROOFLAB"
+vsphere_cluster = "DCS"
+vsphere_resource_pool = "Jaron - ORCH"
