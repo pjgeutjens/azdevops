@@ -1,0 +1,32 @@
+= Terraform blueprint for Azure 
+
+
+
+=== Prerequisites
+- Terraform v0.11
+- Azure subscription
+- Vault 
+
+
+== Instructions
+. Vault
+
+. Build your var files (or use one example)
+[source]
+resource_group_name = "RG-Lab-ThisIsAResourceGroup"
+resource_groupe_location = "westeurope"
+# Prefix used by all the resources 
+prefix = "thisisaprefix"
+### standard 
+standard_vm_count = 3
+standard_vm_type = "Standard_A2_v2"  
+standard_subnet = "10.0.102.0/24"
+standard_is_public = true
+
+Download and prepare local/remote modules
+
+[source,bash]
+terraform init -var-file=xxxx.tfvars
+
+[source,bash]
+terraform plan -var-file=xxxx.tfvars
